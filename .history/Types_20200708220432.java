@@ -9,7 +9,11 @@ public class Types {
     static long l;
     static short sh;
     static String str;
-
+    // Different type of data can be transform from low to high; needs forcing to go to lower value.
+    // Low ------------------------------------- High
+    // (byte,short,char) —> int —> long—> float —> double         // Different type of data can be transform from low to high; needs forcing to go to lower value.
+        // Low ------------------------------------- High
+        // byte,short,char—> int —> long—> float —> double 
     public static void types() {
         // byte  
         System.out.println("Basic Type: byte Binary size: " + Byte.SIZE);  
@@ -80,18 +84,11 @@ public class Types {
     }
 
     public static void convert() {
-        // Different type of data can be transform from low to high; needs forcing to go to lower value.
-        // Low ------------------------------------- High
-        // (byte,short,char) —> int —> long—> float —> double
-
         char cc ='a';
         int ii = cc;
-        System.out.println("char type " + cc + " auto convert to int " + ii);
+        System.out.println("char type \'a\' auto convert to int " + ii);
 
-        // Force convert when they are compatable
-        // (type)val is needed
-        byte bb = (byte)ii;
-        System.out.println("int " + ii + " force convert to byte " + bb);
+        byte 
     }
     public static void main(String args) {
         switch(args) {

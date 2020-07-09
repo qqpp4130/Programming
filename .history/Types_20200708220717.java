@@ -88,8 +88,7 @@ public class Types {
         int ii = cc;
         System.out.println("char type " + cc + " auto convert to int " + ii);
 
-        // Force convert when they are compatable
-        // (type)val is needed
+        // Force convert 
         byte bb = (byte)ii;
         System.out.println("int " + ii + " force convert to byte " + bb);
     }
